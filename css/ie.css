@@ -1,0 +1,45 @@
+header .logo, header .title, header .social, header .advertising, header .order-button{
+    zoom: 1;
+    display: inline;
+    height:58px;
+}
+header{
+    width: 964px;
+}
+.delivery-button h3{
+    width: 64px;
+    height: 30px;
+    display: block;
+}
+nav ul li{
+    zoom: 1;
+    display: inline;
+    height:19px;
+}
+header .logo_title h1 {
+    height: 51px;
+    margin-top: -5px;
+}
+header .title span{
+    line-height: 58px;
+}
+header .social{
+    margin-top: 10px;
+}
+section.first .question-area, section.first .text {
+     zoom: 1;
+     display: inline;
+     height: 275px;
+ }
+section.first .question-area{
+    margin-right: 16%;
+}
+.form-right form .float-left-group .controls {
+    margin-left: 10px;
+}
+.form-right form .float-left-group .controls.float-left{
+    margin-left: 0px;
+}
+.leptaden .order-button h3{
+    line-height: 50px;
+}

@@ -1,0 +1,647 @@
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+body{
+    font-family: Calibri;
+    margin: 0;
+    background: #ffd8f1;
+    color: #565555;
+}
+.body{
+    width: 1040px;
+    margin: 0 auto;
+    background: #fff;
+}
+h2{
+    font-size: 36px;
+    font-family: Century Gothic;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+h3{
+    font-size: 24px;
+    font-family: Century Gothic;
+    font-weight: bold;
+    margin: 5px 0 27px;
+}
+ul{
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+strong{
+    font-size: 18px;
+}
+.hide{
+    display: none;
+}
+/* header*/
+header{
+    z-index: 1;
+    padding: 15px 38px 0 38px;
+    top: 0;
+    position: fixed;
+    background: #fff;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 1040px;
+}
+header > a{
+    text-decoration: none;
+}
+header .logo, header .title, header .social, header .advertising, header .order-button{
+    display: inline-block;
+    vertical-align: middle;
+}
+header .logo_title h1{
+    font-size: 51px;
+    font-weight: bold;
+    color: #08498f;
+    line-height: 1;
+    margin: 0;
+}
+header .logo_description{
+    font-size: 13.5px;
+    color: #565555;
+}
+header .title{
+    font-weight: bold;
+    color: #000000;
+    font-size: 14.5px;
+    margin: 0 8px;
+}
+header .social{
+    margin: 0 5px;
+}
+header .advertising{
+    font-size: 10px;
+    color: #565555;
+    text-align: center;
+    width: 100px;
+    margin: 0 8px;
+}
+.order-button{
+    margin-left: 10px;
+}
+.order-button{
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    border: none;
+    color: #f3438b;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: url("../images/buy_button.png") no-repeat;
+    width: 230px;
+    height: 58px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0 0 0 50px;
+    cursor: pointer;
+}
+header .delivery-button{
+    vertical-align: bottom;
+    font-size: 10px;
+    line-height: 1;
+    padding: 23px 10px 0 10px;
+    width: 84px;
+    display: inline-block;
+    background: url("../images/delivery_bg_header.png");
+}
+/* end header*/
+
+/* nav */
+nav{
+    margin: 10px -40px;
+    padding: 17px 15px;
+    border-top: 1px solid #e0e0e0;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 26px;
+}
+nav ul li a{
+    font-size: 14px;
+    color: #565555;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav ul li a.active{
+    color: #f3438b;
+}
+/* end nav */
+/* main content*/
+section{
+    position: relative;
+}
+.section-background{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    top: 0;
+    background: url("../images/tringel.png") repeat-x;
+}
+.section-background.pink{
+    top: -5px;
+    background: url("../images/tringel-pink.png") repeat-x;
+}
+.section-background.bottom{
+    top: inherit;
+    bottom: 0;
+    background: url("../images/tringel_bottom.png") repeat-x;
+}
+/*.ui-accordion-header-active .section-background.bottom{*/
+    /*display: none;*/
+/*}*/
+
+.pink{
+    background: url("../images/pink.png");
+}
+.blue{
+    background: url("../images/blue.png");
+}
+.pink,
+.pink h2,
+.blue,
+.blue h2{
+    color: #fff;
+}
+.section-header{
+    padding: 20px 40px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 3px;
+}
+.ui-accordion-header-active .section-header-background,
+header .section-header-background{
+    right: 0;
+    left: 0;
+    bottom: 3px;
+    height: 4px;
+    position: absolute;
+    width: 100%;
+    background: url("../images/section-header-bg.png") bottom repeat-x;
+}
+header .section-header-background{
+    bottom: -3px;
+}
+
+.section-header .collapse-icon{
+    background: url("../images/collapse-icon-close.png") no-repeat;
+    position: absolute;
+    width: 34px;
+    height: 32px;
+    right: 40px;
+    top: 25px;
+    cursor: pointer;
+}
+.section-header .collapse-icon.white{
+    background: url("../images/collapse-icon-close-white.png") no-repeat;
+}
+.section-header:focus{
+    outline: none;
+}
+.section-background.header.bottom{
+    top: -8px;
+    bottom: inherit;
+}
+.section-body img{
+    position: absolute;
+    bottom: 0;
+}
+img.right{
+    right: 0;
+}
+img.left{
+    left: 0;
+}
+.text-section{
+    display: inline-block;
+    font-size: 18px;
+    width: 66%;
+}
+.text-section.right{
+    margin-left: 33%;
+}
+.text-section ul{
+    margin-left: 22px;
+}
+.section-body{
+    position: relative;
+    padding: 0 40px 40px;;
+}
+section.first{
+    background-color: #15b47d;
+    color: #fff;
+    padding: 20px 40px;
+    margin-top: 157px;
+}
+section.first .question-area, section.first .text{
+    display: inline-block;
+    vertical-align: top;
+}section.first .question-area{
+     width: 45%;
+     margin-right: 17.5%;
+}
+section.first .question-area .marginRight{
+    margin-right: 15%;
+}
+section.first .text{
+    font-size: 14px;
+    width: 37%;
+}
+section.first .text p{
+    line-height: 16px;
+    margin: 5px 0 12px;
+}
+section.first .text cite{
+    font-size: 10px;
+    font-style: italic;
+    display: block;
+    margin-top: 40px;
+}
+section.first img{
+    position: absolute;
+    left: 347px;
+    top: 30px;
+}
+.breast_milk img{
+    top: -6px;
+}
+.breast_milk .text-section{
+    margin: 35px 0 40px 40%;
+    font-size: 17px;
+    width: 59%;
+}
+.improve_lactation .text-section{
+    margin-bottom: 96px;
+}
+.leptaden-header h2{
+    display: inline-block;
+    margin-right: 10px;
+    color: #08498f;
+}
+.leptaden .order-button {
+    border: 0;
+    padding: 0;
+    margin: 70px 0 20px;
+    text-align: center;
+    display: block;
+    width: 300px;
+    height: 71px;
+    text-decoration: none;
+    color: #fff;
+    background: url("../images/order-button.png") no-repeat;
+}
+.leptaden .order-button span{
+    font-size: 16px;
+}
+.leptaden .order-button h3{
+    font-size: 26px;
+    line-height: 1;
+    padding: 0;
+    margin: -10px 0 0 0;
+}
+.delivery-button{
+    cursor: pointer;
+    width: 155px;
+    margin: 0 auto;
+    padding-left: 25px;
+    height: 58px;
+    border: 0;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background: url("../images/delivery_bg.png") no-repeat;
+}
+.delivery-button h3{
+    font-size: 11px;
+    font-weight: bold;
+}
+.leptaden .text-section{
+    width: 33%;
+    margin-left: 38%;
+    display: inline-block;
+}
+.leptaden .text-section p{
+    font-size: 14px;
+}
+/* end main content*/
+/*   reviews  */
+.section-body.reviews{
+    padding: 30px 80px;
+}
+.section-header.reviews-header img{
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+.review-section-wrapper{
+    overflow: hidden;
+    height: 255px;
+}
+.review img{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.review .review-text{
+    display: inline-block;
+    vertical-align: middle;
+    width: 85%;
+    margin-left: 20px;
+}
+.review{
+    margin-bottom: 20px;
+}
+.review-more{
+    width: 110px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+.review-more img{
+    position: relative;
+}
+#all{
+    padding-bottom: 10px;
+    margin-top: 3px;
+}
+#all h2{
+    padding: 30px 0 20px;
+    line-height: 1;
+    width: 65%;
+    font-size: 62px;
+    font-family: Century Gothic;
+    font-weight: normal;
+    color: #6cd48e;
+}
+#all .brand{
+    margin-bottom: 15px;
+    margin-left: -10px;
+    position: relative;
+}
+.alarsin img,
+.alarsin span{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.alarsin span{
+    margin-left: 15px;
+    width: 80px;
+    font-size: 10px;
+}
+.contacts{
+    margin: 10px 0;
+}
+.contacts span{
+    line-height: 1;
+    display: block;
+    font-size: 12px;
+    opacity: 0.5;
+}
+.modal{
+    position: fixed;
+    background: #fff;
+    width: 655px;
+    top: 10%;
+    left: 50%;
+    margin-left: -326px;
+    z-index: 2;
+    overflow: visible;
+}
+.modal-bg-right{
+    z-index: -1;
+    position: absolute;
+    top:-67px;
+    bottom: -67px;
+    right: -67px;
+    left: -67px;
+    background: url("../images/modal_bg_right.png") repeat-y;
+}
+.modal .close{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    width: 8px;
+    height: 8px;
+    background: url("../images/modal-bg.png");
+    cursor: pointer;
+}
+.modal .form-left{
+    position: absolute;
+    text-align: right;
+    min-height: 150px;
+    bottom: 0;
+    width: 20%;
+    float: left;
+    left: 0;
+    top: 0;
+}
+#orderModal .form-left{
+    background: #0189ca;
+}
+#deliveryModal .form-left span{
+    color: #15b47d;
+}
+.modal .form-right{
+    margin-left: 20%;
+    width: 80%;
+    float: left;
+}
+.modal .form-left span{
+    display: block;
+    color: #fff;
+    margin: 20px 15px;
+    text-transform: uppercase;
+    font-family: Century Gothic;
+    font-size: 14px;
+    font-weight: bold;
+}
+.modal-inner{
+    max-height: 450px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.modal .form-left img{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+#deliveryModal .form-right{
+    width: 70%;
+    padding: 35px 20px;
+}
+#deliveryModal .form-left{
+    height: 750px;
+}
+#deliveryModal img{
+    float: right;
+    margin-right: -45px;
+    margin-top: -30px;
+}
+#orderModal .form-right form{
+    margin: 20px 0 10px 0;
+}
+#deliveryModal .form-right h2{
+    font-size: 24px;
+}
+#deliveryModal .form-right p{
+    font-size: 12px;
+    color: #000;
+}
+.control-group{
+    clear: both;
+    margin-bottom: 6px;
+}
+.form-right form .control-label{
+    width: 37%;
+    text-align: right;
+    float: left;
+    font-size: 14px;
+    padding-top: 10px;
+    color: #000;
+    opacity: 0.6;
+}
+.form-right form .controls{
+    margin-left: 213px;
+    position: relative;
+}
+.form-right form .float-left-group .controls {
+    width: auto;
+    float: left;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.form-right form .float-right-group{
+    position: relative;
+    float: right;
+    width: 130px;
+    margin-top: -70px;
+    margin-right: 25px;
+}
+.form-right form .float-right-group .controls{
+    margin-left: 0;
+}
+.form-right form .float-left-group .controls  input[type="text"].small {
+    width: 60px;
+}
+.form-right form .float-left-group .control-label.float-left{
+    width: auto;
+}
+.form-right form .float-left-group .controls.float-left{
+    margin-left: 8px;
+    width: 60px;
+    position: relative;
+    margin-bottom: 8px;
+}
+form input[type='text']{
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    -webkit-transition: border linear 0.2s,box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s,box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s,box-shadow linear 0.2s;
+    transition: border linear 0.2s,box-shadow linear 0.2s;
+    height: 20px;
+    width: 270px;
+    padding: 4px 6px;
+    font-size: 14px;
+    line-height: 20px;
+}
+form input[type='checkbox']{
+    opacity: 0.6;
+}
+fieldset{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+label{
+    display: block;
+}
+
+.checkbox{
+    font-size: 12px;
+    font-style: italic;
+}
+.checkbox input[type="checkbox"] {
+    float: left;
+    width: auto;
+    height: 10px;
+    margin-bottom: 40px;
+}
+.legend{
+    display: block;
+    padding-left: 215px;
+    margin-bottom: 10px;
+}
+.modal .order-button{
+    height: 72px;
+    margin: 0 auto;
+    padding: 0;
+    background: url("../images/buy_button_form.png") no-repeat;
+}
+/*   form   */
+select, input{
+    font-size: 14px;
+    font-weight: normal;
+    color: #000;
+    left: 0;
+}
+/* -- select  --*/
+span.customSelect {
+    background: url(../images/select_bg.png) no-repeat right #ffffff;
+    border: 1px solid #cccccc;
+    color:#000;
+    padding:0px 8px;
+    width: 165px;
+    height: 25px;
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    -webkit-transition: border linear 0.2s,box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s,box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s,box-shadow linear 0.2s;
+    transition: border linear 0.2s,box-shadow linear 0.2s;
+    line-height: 25px;
+}
+span.customSelect.small{
+    font-size: 18px;
+    font-weight: bold;
+}
+span.customSelect.small,
+input[type="text"].small{
+    width: 85px;
+}
+select.medium,
+input[type="text"].medium{
+    width: 175px;
+}
+.customSelect.customSelectFocus,
+.customSelect.customSelectOpen{
+    border-color:Orange;
+}
+.customSelect.customSelectChanged {
+    -webkit-animation: changed 0.5s;
+    -moz-animation: changed 0.5s;
+    -ms-animation: changed 0.5s;
+    animation: changed 0.5s;
+}
+

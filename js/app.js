@@ -70,11 +70,11 @@ $(function(){
         show($("#orderModal"));
     });
     $(".modal").on('show', function(){
-        $('body').css('overflow', 'hidden');
+        $('html').css('overflow', 'hidden');
         $('.page-container').addClass('scroll');
     });
     $(".modal").on('hide', function(){
-        $('body').css('overflow', 'auto');
+        $('html').css('overflow', 'auto');
         $('.page-container').removeClass('scroll');
     })
     $(".modal .close").on("click", function(){

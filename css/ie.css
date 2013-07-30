@@ -4,6 +4,7 @@ header .logo, header .title, header .social, header .advertising, header .order-
     height:58px;
 }
 header{
+    height: 142px;
     width: 964px;
 }
 .delivery-button h3{
@@ -42,4 +43,17 @@ section.first .question-area{
 }
 .leptaden .order-button h3{
     line-height: 50px;
+}
+.review img, .review .review-text{
+    zoom: 1;
+    display: inline;
+    height: 70px;
+}
+#accordion, .section-body, .review-section-wrapper{
+    position: relative;
+}
+.leptaden-header h2 {
+    zoom: 1;
+    display: inline;
+    height: 43px;
 }

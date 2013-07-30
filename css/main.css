@@ -5,8 +5,12 @@ footer,header,hgroup,menu,nav,section {
 body{
     font-family: Calibri;
     margin: 0;
-    background: #ffd8f1;
+    background: #cdffd2;
     color: #565555;
+    position: relative;
+}
+.page-container{
+    position: relative;
 }
 .page-container.scroll{
     overflow-y: scroll;
@@ -15,6 +19,9 @@ body{
     width: 1040px;
     margin: 0 auto;
     background: #fff;
+    position: relative;
+    box-shadow: 0px 0px 10px #7aa47e;
+    padding-top: 157px;
 }
 h2{
     font-size: 36px;
@@ -159,7 +166,7 @@ section{
     background: url("../images/tringel-pink.png") repeat-x;
 }
 .section-background.bottom{
-    top: inherit;
+    top: auto;
     bottom: 0;
     background: url("../images/tringel_bottom.png") repeat-x;
 }
@@ -247,7 +254,6 @@ section.first{
     background-color: #15b47d;
     color: #fff;
     padding: 20px 40px;
-    margin-top: 157px;
 }
 section.first .question-area, section.first .text{
     display: inline-block;

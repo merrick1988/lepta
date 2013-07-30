@@ -444,6 +444,7 @@ section.first img{
     height: 8px;
     background: url("../images/modal-bg.png");
     cursor: pointer;
+    z-index: 9999;
 }
 .modal .form-left{
     position: absolute;

@@ -60,21 +60,25 @@ $(function(){
     });
     $(".order-button").on("click", function(){
         show($("#orderModal"));
-        $('body').css('overflow', 'hidden');
+
     })
     $(".delivery-button").on("click", function(){
         show($("#deliveryModal"));
-        $('body').css('overflow', 'hidden');
-
     })
     $("#deliveryModal .order-button").on("click", function(){
         hide($("#deliveryModal"));
         show($("#orderModal"));
     });
-
+    $(".modal").on('show', function(){
+        $('body').css('overflow', 'hidden');
+        $('.page-container').addClass('scroll');
+    });
+    $(".modal").on('hide', function(){
+        $('body').css('overflow', 'auto');
+        $('.page-container').removeClass('scroll');
+    })
     $(".modal .close").on("click", function(){
         hide($(".modal"));
-        $('body').css('overflow', 'auto');
     })
     $(".section-header").on("click", function(){
         var hash = $(this).attr("data-hash");
@@ -85,11 +89,13 @@ $(function(){
     function show(modal){
         modal.removeClass("hide");
         modal.stop().animate({opacity: "1"},'slow');
+        modal.trigger('show');
     }
     function hide(modal){
         modal.stop().animate({opacity: "0"},'fast', function(){
             modal.addClass("hide");
         });
+        modal.trigger('hide');
     }
     function setActiveMenu(element){
         $("nav li a").removeClass("active");

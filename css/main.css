@@ -8,6 +8,9 @@ body{
     background: #ffd8f1;
     color: #565555;
 }
+.page-container.scroll{
+    overflow-y: scroll;
+}
 .body{
     width: 1040px;
     margin: 0 auto;
@@ -47,6 +50,7 @@ header{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     width: 1040px;
+    height: 157px;
 }
 header > a{
     text-decoration: none;

@@ -170,10 +170,6 @@ section{
     bottom: 0;
     background: url("../images/tringel_bottom.png") repeat-x;
 }
-/*.ui-accordion-header-active .section-background.bottom{*/
-    /*display: none;*/
-/*}*/
-
 .pink{
     background: url("../images/pink.png");
 }
@@ -210,7 +206,7 @@ header .section-header-background{
     background: url("../images/collapse-icon-close.png") no-repeat;
     position: absolute;
     width: 34px;
-    height: 32px;
+    height: 34px;
     right: 40px;
     top: 25px;
     cursor: pointer;

@@ -20,9 +20,7 @@ $(function(){
                         }
                     }
                 }
-                if (document.all && !document.addEventListener) {
-                    //return
-                }else{
+                if (!document.all && document.addEventListener) {
                     $(ui.oldHeader).find(".collapse-icon").animate({
                         transform: 'rotate(0deg)'
                     })

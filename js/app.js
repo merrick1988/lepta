@@ -60,7 +60,7 @@ $(function(){
     });
     $(".order-button").on("click", function(){
         show($("#orderModal"));
-        //$('body').css('overflow', 'hidden');
+        $('body').css('overflow', 'hidden');
     })
     $(".delivery-button").on("click", function(){
         show($("#deliveryModal"));
